@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Movie Table</title>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN with colored icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tables.css">
+    <style>
+        /* Custom styles */
+        .poster-img {
+            max-width: 80px; /* Adjust the maximum width as needed */
+            height: auto;
+        }
+        }
+        .icon-text {
+            display: flex;
+            align-items: center;
+        }
+        .icon-text i {
+            margin-right: 5px;
+        }
+        .btn-favorite {
+            background-color: transparent;
+            border: 1px solid #FFD700;
+            color: #FFD700;
+            padding: 3px 6px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-favorite:hover {
+            background-color: #FFD700;
+            color: #000;
+        }
+        .btn-favorite i {
+            margin-right: 3px;
+        }
+    </style>
+</head>
+    
+<body>
+<section class="container">
+
+    <h2><a href="index.html">Top 25 Highest Grossing Movies of All Time🎬🍿</a></h2>
+
+    <input type="search" class="light-table-filter" data-table="order-table" placeholder="Search" />
+
+    <table class="order-table">
+        <thead>
+        <tr>
+            <th><i class="fas fa-trophy" style="color:gold;"></i> Rank</th>
+            <th><i class="fas fa-image" style="color:aquamarine;"></i> Poster</th>
+            <th><i class="fas fa-film" style="color:lavender;"></i> Title</th>
+            <th><i class="far fa-calendar-alt" style="color:coral;"></i> Year</th>
+            <th><i class="fas fa-star" style="color:goldenrod;"></i> Ratings</th>
+            <th><i class="fas fa-dollar-sign" style="color:yellowgreen;"></i> Earnings</th>
+            <th><i class="fas fa-play" style="color:purple;"></i> Action</th>
+            <th><i class="fas fa-heart" style="color:red;"></i> Favorites</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Row 1 -->
+        <tr>
+            <td>1🥇</td>
+            <td><img src="image/1.jpg" class="poster-img"></td>
+            <td><a href=#>Avatar</a></td>
+            <td>2009</td>
+            <td>82%🍅</td>
+            <td>$2,923,706,026</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td>2🥈</td>
+            <td><img src="image/2.jpg" class="poster-img"></td>
+            <td><a href=#>Avengers: Endgame</a></td>
+            <td>2019</td>
+            <td>94%🍅</td>
+            <td>$2,797,501,328</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+            <td>3🥉</td>
+            <td><img src="image/3.jpg" class="poster-img"></td>
+            <td><a href=#>Avatar: The Way of Water</a></td>
+            <td>2022</td>
+            <td>76%🍅</td>
+            <td>$2,320,250,281</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 4 -->
+        <tr>
+            <td>4</td>
+            <td><img src="image/4.jpg" class="poster-img"></td>
+            <td><a href=#>Titanic</a></td>
+            <td>1997</td>
+            <td>88%🍅</td>
+            <td>$2,257,844,554</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 5 -->
+        <tr>
+            <td>5</td>
+            <td><img src="image/5.jpg" class="poster-img"></td>
+            <td><a href=#>Star Wars: The Force Awakens</a></td>
+            <td>2015</td>
+            <td>93%🍅</td>
+            <td>$2,068,223,624</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 6 -->
+        <tr>
+            <td>6</td>
+            <td><img src="image/6.jpg" class="poster-img"></td>
+            <td><a href="#">Avengers: Infinity War</a></td>
+            <td>2018</td>
+            <td>85%🍅</td>
+            <td>$2,048,359,754</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 7 -->
+        <tr>
+            <td>7</td>
+            <td><img src="image/7.jpg" class="poster-img"></td>
+            <td><a href="#">Spider-Man: No Way Home</a></td>
+            <td>2021</td>
+            <td>93%🍅</td>
+            <td>$1,921,847,111</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 8 -->
+        <tr>
+            <td>8</td>
+            <td><img src="image/8.jpg" class="poster-img"></td>
+            <td><a href="#">Jurassic World</a></td>
+            <td>2015</td>
+            <td>71%🍅</td>
+            <td>$1,671,537,444</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 9 -->
+        <tr>
+            <td>9</td>
+            <td><img src="image/9.jpg" class="poster-img"></td>
+            <td><a href="#">The Lion King</a></td>
+            <td>2019</td>
+            <td>52%🍅</td>
+            <td>$1,656,943,394</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 10 -->
+        <tr>
+            <td>10</td>
+            <td><img src="image/10.jpg" class="poster-img"></td>
+            <td><a href="#">The Avengers</a></td>
+            <td>2012</td>
+            <td>91%🍅</td>
+            <td>$1,518,815,515</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 11 -->
+        <tr>
+            <td>11</td>
+            <td><img src="image/11.jpg" class="poster-img"></td>
+            <td><a href="#">Furious 7</a></td>
+            <td>2015</td>
+            <td>81%🍅</td>
+            <td>$1,515,341,399</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 12 -->
+        <tr>
+            <td>12</td>
+            <td><img src="image/12.jpg" class="poster-img"></td>
+            <td><a href="#">Top Gun: Maverick</a></td>
+            <td>2022</td>
+            <td>96%🍅</td>
+            <td>$1,495,696,292</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 13 -->
+        <tr>
+            <td>13</td>
+            <td><img src="image/13.jpg" class="poster-img"></td>
+            <td><a href="#">Frozen II</a></td>
+            <td>2019</td>
+            <td>77%🍅</td>
+            <td>$1,450,026,933</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 14 -->
+        <tr>
+            <td>14</td>
+            <td><img src="image/14.jpg" class="poster-img"></td>
+            <td><a href="#">Barbie</a></td>
+            <td>2023</td>
+            <td>88%🍅</td>
+            <td>$1,445,638,421</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 15 -->
+        <tr>
+            <td>15</td>
+            <td><img src="image/15.jpg" class="poster-img"></td>
+            <td><a href="#">Avengers: Age of Ultron</a></td>
+            <td>2015</td>
+            <td>76%🍅</td>
+            <td>$1,402,809,540</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 16 -->
+        <tr>
+            <td>16</td>
+            <td><img src="image/16.jpg" class="poster-img"></td>
+            <td><a href="#">The Super Mario Bros. Movie†</a></td>
+            <td>2023</td>
+            <td>59%🍅</td>
+            <td>$1,362,052,250</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 17 -->
+        <tr>
+            <td>17</td>
+            <td><img src="image/17.jpg" class="poster-img"></td>
+            <td><a href="#">Black Panther</a></td>
+            <td>2018</td>
+            <td>96%🍅</td>
+            <td>$1,347,280,838</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 18 -->
+        <tr>
+            <td>18</td>
+            <td><img src="image/18.jpg" class="poster-img"></td>
+            <td><a href="#">Harry Potter and the Deathly Hallows – Part 2</a></td>
+            <td>2011</td>
+            <td>96%🍅</td>
+            <td>$1,342,139,727</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 19 -->
+        <tr>
+            <td>19</td>
+            <td><img src="image/19.jpg" class="poster-img"></td>
+            <td><a href="#">Star Wars: The Last Jedi</a></td>
+            <td>2017</td>
+            <td>91%🍅</td>
+            <td>$1,332,539,889</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 20 -->
+        <tr>
+            <td>20</td>
+            <td><img src="image/20.jpg" class="poster-img"></td>
+            <td><a href="#">Jurassic World: Fallen Kingdom</a></td>
+            <td>2018</td>
+            <td>71%🍅</td>
+            <td>$1,308,473,425</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 21 -->
+        <tr>
+            <td>21</td>
+            <td><img src="image/21.jpg" class="poster-img"></td>
+            <td><a href="#">Frozen</a></td>
+            <td>2013</td>
+            <td>90%🍅</td>
+            <td>$1,290,000,000</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 22 -->
+        <tr>
+            <td>22</td>
+            <td><img src="image/22.jpg" class="poster-img"></td>
+            <td><a href="#">Beauty and the Beast</a></td>
+            <td>2017</td>
+            <td>71%🍅</td>
+            <td>$1,263,521,126</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 23 -->
+        <tr>
+            <td>23</td>
+            <td><img src="image/23.jpg" class="poster-img"></td>
+            <td><a href="#">Incredibles 2</a></td>
+            <td>2018</td>
+            <td>93%🍅</td>
+            <td>$1,242,805,359</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 24 -->
+        <tr>
+            <td>24</td>
+            <td><img src="image/24.jpg" class="poster-img"></td>
+            <td><a href="#">The Fate of the Furious</a></td>
+            <td>2017</td>
+            <td>67%🍅</td>
+            <td>$1,238,764,765</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        <!-- Row 25 -->
+        <tr>
+            <td>25</td>
+            <td><img src="image/25.jpg" class="poster-img"></td>
+            <td><a href="#">Iron Man 3</a></td>
+            <td>2013</td>
+            <td>79%🍅</td>
+            <td>$1,214,811,252</td>
+            <td><button class="btn btn-primary">Watch Trailer</button></td>
+            <td><button class="btn-favorite"><i class="fas fa-heart"></i> Add</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+<script src="tables.js"></script>
+</body>
+</html>
+
+
